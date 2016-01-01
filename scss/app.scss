@@ -42,3 +42,14 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+.hero-text {
+	margin-top: 30%;
+	opacity: .2;
+}
+
+body {
+	height: auto !important;
+}
+
+
