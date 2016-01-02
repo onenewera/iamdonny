@@ -42,3 +42,139 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+.hero-text {
+	opacity: .2;
+}
+
+/* REMOVE WHEN YOU GO LIVE */
+body { 
+  height: 100vh !important;
+}
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: -2;
+  opacity: .1;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 4rem;
+  .links a {
+    list-style: none;
+    color: $white;
+    letter-spacing: 1px;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    &::after {
+      content: "";
+      padding: 0 1.4rem 0 1.8rem;
+    }
+    &:last-child::after {
+      content: "";
+      padding: 0 1.4rem 0 1.8rem;
+    }
+  }
+  .links a:hover {
+  	opacity: .8;
+  }
+}
+
+.fa {
+	color: #72939b !important;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.hero {
+	background: rgba(39, 52, 56, .8);
+	border-radius: 15px;
+	color: #2b383c;
+	margin-top: 15px;
+
+	h1 {
+		background: -webkit-linear-gradient(#e5ef5b, #2b383c);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		letter-spacing: 7px;
+		font-weight: 100;
+	}
+
+	p {
+		padding: 30px 0px 0px 49px;
+		position: absolute;
+		letter-spacing: 3px;
+	}
+}
+
+.inline-list {
+	list-style-type: none;
+
+	li {
+		display: inline;
+		margin-left: 10px;
+		opacity: .4;
+	}
+
+	li:first-of-type {
+		margin-left: none !important;
+	}
+}
+
+.display-text-left {
+	color: #868c8e;
+	margin: 0 0 3rem 3rem;
+	padding: 2.5rem;
+	border: 1px solid #425155;
+	background: rgba(44, 58, 62, .5);
+	border-radius: 10px;
+}
+
+.display-text-right {
+	color: #868c8e;
+	margin: 0 3rem 3rem 0;
+	padding: 2.5rem;
+
+	ul {
+		color: #2b393e;
+		padding-top: 1rem;
+
+		a {
+			opacity: .5;
+		}
+
+		a:hover {
+			opacity: 1;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.display-text-left {
+		margin: 0 0 0 0;
+	}
+
+	.display-text-right {
+		margin: 0 0 0 0;
+	}
+}
+
+.logo {
+	opacity: .2;
+}

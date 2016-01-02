@@ -46,9 +46,9 @@
 
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.5;
-$primary-color: #2e2e2e;
-$secondary-color: #e6e6e6;
+$global-lineheight: 1.3;
+$primary-color: #868c8e;
+$secondary-color: #e5ef5b;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -56,17 +56,17 @@ $alert-color: #ec5840;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #232e33;
 $white: #fefefe;
-$body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-background: $black;
+$body-font-color: $primary-color;
+$body-font-family: Arial, sans-serif;
 $body-antialiased: true;
-$global-margin: 1rem;
+$global-margin: 0;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 2rem;
 $global-text-direction: ltr;
 
 // 2. Breakpoints
@@ -102,7 +102,7 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
+    'h1': 90,
     'h2': 20,
     'h3': 19,
     'h4': 18,
@@ -110,7 +110,7 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
+    'h1': 200,
     'h2': 40,
     'h3': 31,
     'h4': 25,
@@ -130,7 +130,7 @@ $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
-$code-background: $light-gray;
+$code-background: $white;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
@@ -232,8 +232,8 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: #fff;
-$button-color-alt: #000;
+$button-color: rgba(39, 52, 56, .8);
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -254,26 +254,26 @@ $buttongroup-expand-max: 6;
 // 13. Callout
 // -----------
 
-$callout-background: $white;
-$callout-background-fade: 85%;
+$callout-background: rgba(39, 52, 56, .8);
+$callout-background-fade: 0%;
 $callout-border: 1px solid rgba($black, 0.25);
-$callout-margin: 0 0 1rem 0;
+$callout-margin: 1.5rem 0 1rem 0;
 $callout-padding: 1rem;
-$callout-font-color: $body-font-color;
-$callout-font-color-alt: $body-background;
-$callout-radius: $global-radius;
+$callout-font-color: $primary-color;
+$callout-font-color-alt: $light-gray;
+$callout-radius: 200px;
 $callout-link-tint: 30%;
 
 // 14. Close Button
 // ----------------
 
 $closebutton-position: right top;
-$closebutton-offset-horizontal: 1rem;
-$closebutton-offset-vertical: 0.5rem;
-$closebutton-size: 2em;
+$closebutton-offset-horizontal: 2rem;
+$closebutton-offset-vertical: 2.5rem;
+$closebutton-size: 1.5em;
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color-hover: $secondary-color;
 
 // 15. Drilldown
 // -------------
