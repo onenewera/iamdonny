@@ -3981,7 +3981,7 @@ img.bg {
   height: auto;
   position: fixed;
   z-index: -2;
-  opacity: .1;
+  opacity: .05;
   top: 0;
   left: 0; }
 
@@ -4016,7 +4016,7 @@ img.bg {
   text-transform: uppercase; }
 
 .hero {
-  background: rgba(39, 52, 56, 0.8);
+  /* background: rgba(39, 52, 56, .8); */
   color: #2b383c;
   margin-top: 15px; }
   .hero h1 {
@@ -4069,3 +4069,9 @@ img.bg {
 
 .helper-icon {
   opacity: .5; }
+
+@media screen and (max-width: 1024px) {
+  .hook-head {
+    position: relative !important;
+    padding: 0 0 0 10px !important;
+    margin: 0 !important; } }
