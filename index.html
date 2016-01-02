@@ -7,6 +7,21 @@
     <title>Welcome to Donny!</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script LANGUAGE="JavaScript">
+
+    function go_to(url) {
+    window.location=url;
+    }
+    function rand_link() {
+    var a;
+    a = 1+Math.round(Math.random()*3);   // a = random number between 1-3
+    if (a==1) go_to("www.google.com");
+    if (a==2) go_to("www.korn.com");
+    if (a==3) go_to("www.yahoo.com");
+    }
+
+    </script>
+
   </head>
   <body>
 
@@ -16,7 +31,8 @@
       </div>
       <div class="large-10 columns text-right">
         <ul class="inline-list">
-          <li><a href="#">Have some fun</a></li>
+          <li><a href="#" type="button" name="myButton" value="Random link"
+            onClick="rand_link()">Have some fun</a></li>
           <li><a href="#">Join Me</a></li>
         </ul>
       </div>
@@ -28,7 +44,8 @@
         <h1 class="uppercase text-center">Designer</h1>
         <div class="row">
           <div class="large-6 columns">
-            <div class="display-text-left"><h5>Title goes here</h5><br>Curabitur blandit mollis lacus. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nunc nulla. In auctor lobortis lacus.
+            <div class="display-text-left"><h5>Hey, My name is Donald</h5><br>My friends call me Donny. I am a designer <em>(product, marketing, ux, you name it!)</em> with a passion for front end <em>(I developed this site - git, sublime, and foundation).</em><br>
+            currently at <strong><a href="#">Appcues</a></strong>, formerly at <strong><a href="#">Impactbnd</a></strong>.
             </div>
           </div>
           <div class="large-6 columns">
