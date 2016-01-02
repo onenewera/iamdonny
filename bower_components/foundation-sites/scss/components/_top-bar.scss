@@ -26,7 +26,6 @@ $topbar-input-width: 200px !default;
 @mixin top-bar-container {
   @include clearfix;
   padding: $topbar-padding;
-  border-radius: 15px;
 
   &,
   ul {
