@@ -3569,7 +3569,8 @@ table.hover tr:nth-of-type(even):hover {
     transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: 0.8rem 0.5rem 0 0.5rem;
+  border-radius: 15px; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table; }
@@ -3577,7 +3578,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: rgba(39, 52, 56, 0.8); }
   .top-bar a {
     color: #868c8e; }
   .top-bar input {
@@ -4065,3 +4066,6 @@ img.bg {
 
 .helper-icon {
   opacity: .5; }
+
+.top-bar {
+  border-radius: 15px; }
