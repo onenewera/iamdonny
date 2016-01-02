@@ -104,12 +104,11 @@ img.bg {
 
 .hero {
 	background: rgba(39, 52, 56, .8);
-	border-radius: 15px;
 	color: #2b383c;
 	margin-top: 15px;
 
 	h1 {
-		background: -webkit-linear-gradient(#e5ef5b, #2b383c);
+		background: -webkit-linear-gradient(#e5ef5b, #e5ef5b, #2b383c);
 		  -webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
 		letter-spacing: 7px;
@@ -128,7 +127,7 @@ img.bg {
 
 	li {
 		display: inline;
-		margin-left: 10px;
+		margin-left: 30px;
 		opacity: .4;
 	}
 
@@ -143,7 +142,6 @@ img.bg {
 	padding: 2.5rem;
 	border: 1px solid #425155;
 	background: rgba(44, 58, 62, .5);
-	border-radius: 10px;
 }
 
 .display-text-right {
@@ -182,3 +180,7 @@ img.bg {
 .helper-icon {
 	opacity: .5;
 }
+
+.top-bar {
+}
+

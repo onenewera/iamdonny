@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Donny!</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script LANGUAGE="JavaScript">
+    <script language="JavaScript">
 
     function go_to(url) {
     window.location=url;
@@ -25,7 +27,7 @@
   </head>
   <body>
 
-    <div class="row hide-for-small-only">
+    <div class="row hide-for-small-only top-bar">
       <div class="large-2 columns">
         <img src="img/wilson-logo-gray.png" class="logo" width="30px">
       </div>
@@ -40,11 +42,17 @@
 
     <div class="row">
       <div class="large-12 columns hero">
-        <p class="subheader uppercase hide-for-small-only">Product</p>
+        <p class="subheader uppercase hide-for-small-only cd-headline letters type">
+            <span class="cd-words-wrapper waiting">
+              <b class="is-visible">product</b>
+              <b>web</b>
+              <b>UX</b>
+            </span>
+        </p>
         <h1 class="uppercase text-center">Designer</h1>
         <div class="row">
           <div class="large-6 columns">
-            <div class="display-text-left"><div class="helper-icon"><i class="fa fa-question-circle"></i></div><br><h5>Hey, My name is Donald</h5><br>My friends call me Donny. I am a designer <em>(product, marketing, ux, you name it!)</em> with a passion for front end <em>(I developed this site - git, sublime, and foundation).</em><br>
+            <div class="display-text-left"><div class="helper-icon"><i class="fa fa-question-circle"></i></div><br><h5>Hey, My name is Donald</h5><br>My friends call me Donny. I am a designer <em>(product, marketing, ux, you name it!)</em> with a passion for front end <em>(I developed this site - git, sublime, codekit, and foundation).</em><br>
             Currently at <strong><a href="#">Appcues</a></strong>, formerly at <strong><a href="#">Impactbnd</a></strong>.
             </div>
           </div>
@@ -65,11 +73,17 @@
 
     <div class="row">
       <div class="large-12 columns text-center">
-        <div class="callout" data-closable="slide-out-right">
+        <div class="callout" data-closable="fade-out">
           <button class="close-button" data-close>&times;</button>
           <p>Looking for an amazing designer?</p>
           <a class="button">I got you</a>
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="shots"></ul>
       </div>
     </div>
 
@@ -87,11 +101,31 @@
       </div>
     </footer>
 
-    <img src="img/hero-bg-profile.jpg" class="bg hide-for-small-only">
+    <img src="img/hero-bg-bw-crop.jpg" class="bg hide-for-small-only">
+    
+    <script type="text/javascript">
+      // NOTE: Don't use this token, replace it with your own client access token.
+      $.jribbble.setToken('1220e8337487705bb3bf496f258e5b3a28581b9255f08bbefdca653cf2bfe168');
 
+      $.jribbble.users('donnywilson').shots({per_page: 36}).then(function(shots) {
+        var html = [];
+        
+        shots.forEach(function(shot) {
+          html.push('<li class="shots--shot">');
+          html.push('<a href="' + shot.html_url + '" target="_blank">');
+          html.push('<img src="' + shot.images.normal + '">');
+          html.push('</a></li>');
+        });
+        
+        $('.shots').html(html.join(''));
+      });
+    </script>
+
+    <script src="bower_components/jribbble/dist/jribbble.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/app-min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
   </body>
 </html>

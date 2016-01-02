@@ -108,6 +108,7 @@ $header-sizes: (
     'h4': 18,
     'h5': 17,
     'h6': 16,
+    'h7': 10,
   ),
   medium: (
     'h1': 200,
@@ -116,6 +117,7 @@ $header-sizes: (
     'h4': 25,
     'h5': 20,
     'h6': 16,
+    'h7': 10,
   ),
 );
 $header-color: inherit;
@@ -541,7 +543,7 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 0.8rem 0.5rem 0 0.5rem;
+$topbar-background: rgba(39, 52, 56, .8);
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
