@@ -122,6 +122,12 @@ img.bg {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.hero h1 {
+		text-align: left;
+	}
+}
+
 .inline-list {
 	list-style-type: none;
 
