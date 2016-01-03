@@ -105,7 +105,7 @@ img.bg {
 .hero {
 	/* background: rgba(39, 52, 56, .8); */
 	color: #2b383c;
-	margin-top: 15px;
+	margin-top: 5rem;
 
 	h1 {
 		background: -webkit-linear-gradient(#e5ef5b, #e5ef5b, #2b383c);
@@ -182,6 +182,12 @@ img.bg {
 }
 
 .top-bar {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	/* margin-bottom: 100px; */
+	/* margin: 0 auto; */
+	z-index: 999;
 }
 
 @media screen and (max-width: 1024px) {
