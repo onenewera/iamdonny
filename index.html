@@ -86,11 +86,7 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <ul class="shots"></ul>
-      </div>
-    </div>
+    <ul class="shots"></ul>
 
     <footer class="footer hide-for-small-only">
       <div class="row hero-text">
@@ -108,6 +104,27 @@
     </footer>
 
     <img src="img/hero-bg-profile.jpg" class="bg hide-for-small-only">
+
+    <script>
+      $(document).ready(function()
+          //Paste your Client Access Token in the line below within quotes - you can build your API from https://dribbble.com/account/applications 
+          $.jribbble.setToken('1220e8337487705bb3bf496f258e5b3a28581b9255f08bbefdca653cf2bfe168');
+          $.jribbble.users('donnywilson').shots({per_page: 16}).then(function(shots) {
+          var html = [];
+        
+          shots.forEach(function(shot) {
+              html.push('<div class="col-sm-6 col-md-4 col-lg-4"> <div class="grid-list">');
+              html.push('<a href="' + shot.html_url + '" target="_blank">');
+              html.push('<img class="img-responsive" src="' + shot.images.normal + '" alt="' + shot.title + '"><\/a>');
+              html.push('<div class="overlay"><a target="_blank"  href="' + shot.html_url + '">');
+              html.push('<h5>' + shot.title + '<\/h5>');
+              html.push('<\/a> <\/div><\/div><\/div>');
+          });
+        
+          $('.shots').html(html.join(''));
+          });
+      });
+    </script>
     
 
     <script src="js/min/jribbble.min.js"></script>
