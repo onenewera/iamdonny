@@ -87,10 +87,10 @@
       </div>
     </div>
 
-    <div class="container">
-        <h5>My Dribbble Shots</h5>
-        <div class="row center dribbble-shots">
-        </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="shots"></ul>
+      </div>
     </div>
 
     <footer class="footer hide-for-small-only">
@@ -110,22 +110,7 @@
     </footer>
 
     <img src="img/hero-bg-profile.jpg" class="bg hide-for-small-only">
-
-    <script>
-      (function(){
-          var playerId = "envato";
-          $.jribbble.getShotsByPlayerId(playerId, function(data){
-              var shots = data.shots;
-              var h = '';
-              $(shots).each(function(i, shot){
-                  h += '<div class="column-6--hand column-4--lap column-3--desk column-2--wall">';
-                  h += '<a href="' + shot.url + '"><img src="' + shot.image_teaser_url + '"></a>';
-                  h += '</div>';
-              });
-              $('.dribbble-shots').html(h);
-          });
-      }());
-    </script>
+    
 
     <script src="js/min/jribbble.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -4109,22 +4109,3 @@ img.bg {
     margin: 0 !important; } }
 .shots {
   background: yellow; }
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 100px; }
-  .container h1 {
-    font-weight: 400; }
-  .container *[class^=column] {
-    /*max-height: 100px;*/
-    overflow: hidden;
-    margin-bottom: 12px; }
-  .container *[class^=column] img {
-    width: 100%; }
-  .container a {
-    display: block;
-    opacity: 0.9; }
-  .container a:hover {
-    opacity: 1; }
