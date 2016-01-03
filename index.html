@@ -87,7 +87,11 @@
       </div>
     </div>
 
-    <ul class="shots"></ul>
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="shots"></ul>
+      </div>
+    </div>
 
     <footer class="footer hide-for-small-only">
       <div class="row hero-text">
@@ -106,25 +110,25 @@
     </footer>
 
     <img src="img/hero-bg-profile.jpg" class="bg hide-for-small-only">
-    
-    <script type="text/javascript">
-      $.jribbble.setToken('1220e8337487705bb3bf496f258e5b3a28581b9255f08bbefdca653cf2bfe168');
 
-      $.jribbble.users('donnywilson').likes({per_page: 4}).then(function(likes) {
+    <script language="JavaScript">
+      $.jribbble.setToken('f688ac519289f19ce5cebc1383c15ad5c02bd58205cd83c86cbb0ce09170c1b4');
+
+      $.jribbble.users('donnywilson').shots({per_page: 36}).then(function(shots) {
         var html = [];
         
-        likes.forEach(function(like) {
+        shots.forEach(function(shot) {
           html.push('<li class="shots--shot">');
-          html.push('<a href="' + like.shot.html_url + '" target="_blank">');
-          html.push('<img src="' + like.shot.images.normal + '">');
+          html.push('<a href="' + shot.html_url + '" target="_blank">');
+          html.push('<img src="' + shot.images.normal + '">');
           html.push('</a></li>');
         });
         
         $('.shots').html(html.join(''));
-      });    
+      });
     </script>
 
-    <script src="bower_components/jribbble/dist/jribbble.min.js"></script>
+    <script src="js/min/jribbble.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>

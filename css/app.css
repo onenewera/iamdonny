@@ -4107,3 +4107,6 @@ img.bg {
     position: relative !important;
     padding: 0 0 0 10px !important;
     margin: 0 !important; } }
+.shots {
+  background: yellow;
+  height: auto; }
