@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
     <script src="js/jribbble.min.js"></script>
 
   </head>
@@ -74,7 +73,7 @@
     </div>
 
     <div class="row">
-      <div class="large-6 columns">
+      <div class="large-12 columns">
         <aside class="gallery">
           <ul class="gallery-feed"></ul>
         </aside>
@@ -100,12 +99,12 @@
 
     <script>
       $.jribbble.setToken('1220e8337487705bb3bf496f258e5b3a28581b9255f08bbefdca653cf2bfe168');
-      $.jribbble.users('donnywilson').shots({per_page: 10}).then(function(shots) {
+      $.jribbble.users('donnywilson').shots({per_page: 9}).then(function(shots) {
         var html = [];
         shots.forEach(function(shot) {
            html.push(
                   '<li class="tile"><div>'+
-                  '<a class="thumb" href="'+shot.images.hidpi+'" data-lightbox="project" data-title="'+shot.title+'"><figure><i class="fa fa-search-plus"></i></figure>' +
+                  '<a class="thumb" href="'+shot.html_url+'" data-lightbox="project" data-title="'+shot.title+'"><figure><i class="fa fa-search-plus"></i></figure>' +
                   '<img src="'+shot.images.hidpi+'" alt="'+shot.title+'" />' +
                   '</a>' +
                   '</div></li>'
