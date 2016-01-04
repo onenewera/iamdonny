@@ -277,3 +277,43 @@ img.bg {
     width: 99%
 }
 
+.grid-list-wrapper {
+    margin:0 0 4em
+}
+
+.grid-list {
+    background:#fff;
+    margin:0 0 3em
+}
+
+.grid-list img {
+    width:100%;
+    height:auto
+}
+
+.overlay a {
+    color:#222;
+    padding:1em 2em;
+    display:block;
+}
+
+.overlay h2 {
+    font-size:1.2em;
+    line-height:1.35em;
+    margin:0;
+    padding:.5em 0
+}
+
+.overlay h3 {
+    display:none;
+    padding:0;
+    font-size:1.2em;
+    line-height:1em
+}
+
+.overlay span {
+    text-transform:uppercase;
+    font-weight:100;
+    margin-right:1em
+}
+
