@@ -4107,92 +4107,38 @@ img.bg {
     position: relative !important;
     padding: 0 0 0 10px !important;
     margin: 0 !important; } }
-/* jribbble Shots */
-.shots {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 0;
-  padding-left: 0; }
-
-.shots.hidden {
-  display: none; }
-
-.shots__heading {
-  -webkit-flex-basis: 100%;
-  flex-basis: 100%; }
-
-.shots__heading h3 {
-  margin-bottom: 0.2em; }
-
-.shots--shot {
-  -webkit-flex: 0 0 100%;
-  flex: 0 0 100%; }
-
-.shots--shot a {
-  display: block;
-  overflow: hidden;
-  padding: 0.1rem; }
-
-.shots--shot img {
-  display: block;
-  width: 100%; }
-
-@media screen and (min-width: 460px) {
-  .shots--shot {
-    -webkit-flex-basis: 50%;
-    flex-basis: 50%; } }
-@media screen and (min-width: 640px) {
-  .shots--shot {
-    -webkit-flex-basis: 33.33%;
-    flex-basis: 33.33%; } }
-[role="contentinfo"] {
-  padding-bottom: 2rem;
+/*jribbble code*/
+.gallery {
   position: relative; }
-
-[role="contentinfo"]::before {
-  background-color: #f40000;
-  content: "";
-  display: block;
-  height: 3px;
-  left: -2px;
-  margin: 0 auto;
-  position: relative;
-  top: 2px;
-  transform: rotate(0.1deg);
-  width: 99%; }
-
-.grid-list-wrapper {
-  margin: 0 0 4em; }
-
-.grid-list {
-  background: #fff;
-  margin: 0 0 3em; }
-
-.grid-list img {
-  width: 100%;
-  height: auto; }
-
-.overlay a {
-  color: #222;
-  padding: 1em 2em;
-  display: block; }
-
-.overlay h2 {
-  font-size: 1.2em;
-  line-height: 1.35em;
-  margin: 0;
-  padding: 0.5em 0; }
-
-.overlay h3 {
-  display: none;
-  padding: 0;
-  font-size: 1.2em;
-  line-height: 1em; }
-
-.overlay span {
-  text-transform: uppercase;
-  font-weight: 100;
-  margin-right: 1em; }
+  .gallery .gallery-feed .tile {
+    list-style-type: none;
+    /* display: block; */
+    position: relative;
+    float: left; }
+    .gallery .gallery-feed .tile .thumb img {
+      width: 349px;
+      height: auto; }
+    .gallery .gallery-feed .tile .thumb figure {
+      position: absolute;
+      width: 350px;
+      height: 100%;
+      top: 0;
+      margin: 0;
+      text-align: center;
+      color: #fefefe;
+      padding-top: 0;
+      background: rgba(39, 52, 56, 0.9);
+      opacity: 0;
+      height: 262px;
+      box-sizing: border-box; }
+    .gallery .gallery-feed .tile .thumb:hover figure {
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s;
+      opacity: 1;
+      padding-top: 120px;
+      font-size: 30px;
+      cursor: pointer; }
+    .gallery .gallery-feed .tile .special {
+      background: #F3C029;
+      color: #333; }
