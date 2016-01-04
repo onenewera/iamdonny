@@ -59,7 +59,7 @@ img.bg {
   height: auto;
   position: fixed;
   z-index: -2;
-  opacity: .1;
+  opacity: .05;
   top: 0;
   left: 0;
 }
@@ -103,9 +103,9 @@ img.bg {
 }
 
 .hero {
-	background: rgba(39, 52, 56, .8);
+	/* background: rgba(39, 52, 56, .8); */
 	color: #2b383c;
-	margin-top: 15px;
+	margin-top: 5rem;
 
 	h1 {
 		background: -webkit-linear-gradient(#e5ef5b, #e5ef5b, #2b383c);
@@ -119,6 +119,12 @@ img.bg {
 		padding: 30px 0px 0px 49px;
 		position: absolute;
 		letter-spacing: 3px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.hero h1 {
+		text-align: left;
 	}
 }
 
@@ -182,5 +188,77 @@ img.bg {
 }
 
 .top-bar {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	/* margin-bottom: 100px; */
+	/* margin: 0 auto; */
+	z-index: 999;
 }
+
+@media screen and (max-width: 1024px) {
+	.hook-head {
+		position: relative !important;
+		padding: 0 0 0 10px !important;
+		margin: 0 !important;
+	}
+}
+
+@media screen and (max-width: 810px) {
+  .tile {
+    margin: 0 auto;
+  }
+}
+
+/*jribbble code*/
+
+.gallery {
+	position: relative;
+  .gallery-feed {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    .tile {
+        list-style-type: none;
+        /* display: block; */
+        position: relative;
+
+        .thumb {
+          img {
+            width: 24.375rem;
+            height: auto;
+          }
+          figure {
+            position: absolute;
+            width: 24.375rem;
+            height: 100%;
+            top: 0;
+            margin: 0;
+            text-align: center;
+            color: $white;
+            padding-top: 0;
+            background: rgba(39, 52, 56, .9);
+            opacity: 0;
+            box-sizing: border-box;
+          }
+          &:hover figure {
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            transition: 0.5s;
+            opacity: 1;
+            padding-top: 120px;
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+        .special {
+          background: #F3C029;
+          color: #333;
+        }
+      }
+  }
+}
+
+
+
 

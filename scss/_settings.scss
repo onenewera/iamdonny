@@ -102,7 +102,7 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 90,
+    'h1': 55,
     'h2': 20,
     'h3': 19,
     'h4': 18,
@@ -111,6 +111,15 @@ $header-sizes: (
     'h7': 10,
   ),
   medium: (
+    'h1': 150,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+    'h7': 10,
+  ),
+  large: (
     'h1': 200,
     'h2': 40,
     'h3': 31,
@@ -544,6 +553,6 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.8rem 0.5rem 0 0.5rem;
-$topbar-background: rgba(39, 52, 56, .8);
+$topbar-background: rgba(39, 52, 56, 1);
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
