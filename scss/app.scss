@@ -147,7 +147,13 @@ img.bg {
 	margin: 0 0 3rem 3rem;
 	padding: 2.5rem;
 	border: 1px solid #425155;
-	background: rgba(40, 52, 57, 1);
+  background: rgba(44, 58, 62, .9);
+}
+
+@media screen and (max-width: 810px) {
+  .display-text-left {
+    background: rgba(40, 52, 57, 1);
+  }
 }
 
 .display-text-right {
@@ -225,12 +231,12 @@ img.bg {
 
         .thumb {
           img {
-            width: 24.330rem;
+            width: 21.83rem;
             height: auto;
           }
           figure {
             position: absolute;
-            width: 24.330rem;
+            width: 21.83rem;
             height: 100%;
             top: 0;
             margin: 0;
@@ -314,6 +320,7 @@ img.bg {
 
 .portfolio-grid {
   margin-top: 4rem;
+  max-width: 1080px;
   background: rgba(44, 58, 62, 0.5);
   border: 1px solid #425155;
 
@@ -327,11 +334,22 @@ img.bg {
     }
 
     p {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 50px;
     }
     a {
       color: #4baad4;
+    }
+    i  {
+      margin-left: 8px;
+      vertical-align: center;
+      transform: translate(20%, 20%);
+      font-size: 24px;
+      opacity: .6;
+    }
+
+    i:hover {
+      opacity: .7;
     }
   }
 }
