@@ -311,3 +311,26 @@ img.bg {
     bottom: 1rem;
   }
 }
+
+.portfolio-grid {
+  margin-top: 4rem;
+  background: rgba(44, 58, 62, 0.5);
+
+  .title {
+    text-align: center;
+    h5 {
+      color: black;
+      color: #e5ef5b;
+      margin-bottom: 10px;
+      padding-top: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+    a {
+      color: #4baad4;
+    }
+  }
+}
