@@ -225,12 +225,12 @@ img.bg {
 
         .thumb {
           img {
-            width: 24.375rem;
+            width: 24.330rem;
             height: auto;
           }
           figure {
             position: absolute;
-            width: 24.375rem;
+            width: 24.330rem;
             height: 100%;
             top: 0;
             margin: 0;
@@ -315,6 +315,7 @@ img.bg {
 .portfolio-grid {
   margin-top: 4rem;
   background: rgba(44, 58, 62, 0.5);
+  border: 1px solid #425155;
 
   .title {
     text-align: center;

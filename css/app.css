@@ -4122,11 +4122,11 @@ img.bg {
       /* display: block; */
       position: relative; }
       .gallery .gallery-feed .tile .thumb img {
-        width: 24.375rem;
+        width: 24.330rem;
         height: auto; }
       .gallery .gallery-feed .tile .thumb figure {
         position: absolute;
-        width: 24.375rem;
+        width: 24.330rem;
         height: 100%;
         top: 0;
         margin: 0;
@@ -4186,7 +4186,8 @@ img.bg {
     bottom: 1rem; } }
 .portfolio-grid {
   margin-top: 4rem;
-  background: rgba(44, 58, 62, 0.5); }
+  background: rgba(44, 58, 62, 0.5);
+  border: 1px solid #425155; }
   .portfolio-grid .title {
     text-align: center; }
     .portfolio-grid .title h5 {
