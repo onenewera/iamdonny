@@ -4068,8 +4068,11 @@ img.bg {
   margin: 0 0 3rem 3rem;
   padding: 2.5rem;
   border: 1px solid #425155;
-  background: rgba(44, 58, 62, 0.5); }
+  background: rgba(44, 58, 62, 0.9); }
 
+@media screen and (max-width: 810px) {
+  .display-text-left {
+    background: #283439; } }
 .display-text-right {
   color: #868c8e;
   margin: 0 3rem 3rem 0;
@@ -4122,11 +4125,11 @@ img.bg {
       /* display: block; */
       position: relative; }
       .gallery .gallery-feed .tile .thumb img {
-        width: 24.375rem;
+        width: 21.83rem;
         height: auto; }
       .gallery .gallery-feed .tile .thumb figure {
         position: absolute;
-        width: 24.375rem;
+        width: 21.83rem;
         height: 100%;
         top: 0;
         margin: 0;
@@ -4147,3 +4150,73 @@ img.bg {
       .gallery .gallery-feed .tile .special {
         background: #F3C029;
         color: #333; }
+
+.work-button {
+  padding: 8px 18px 8px 15px;
+  border-radius: 50px;
+  margin-left: .6rem;
+  color: #e5ef5b; }
+
+.cta {
+  position: fixed;
+  bottom: 3rem;
+  left: -1px;
+  z-index: 999;
+  background: rgba(44, 58, 62, 0.9);
+  color: #2b383c;
+  width: 307px;
+  height: 50px;
+  border: 1px solid #425155;
+  font-size: 14px;
+  color: #fefefe; }
+  .cta .fa {
+    color: #e5ef5b !important; }
+  .cta .icon {
+    margin-left: .6rem;
+    transition: all .4s ease; }
+  .cta .work-button:hover {
+    color: #e5ef5b; }
+    .cta .work-button:hover .icon {
+      margin-left: .9rem; }
+  .cta p {
+    margin-bottom: 0 !important;
+    margin-top: 12px;
+    margin-left: 20px; }
+
+@media screen and (max-width: 810px) {
+  .cta {
+    top: 1rem;
+    bottom: 1rem; } }
+.portfolio-grid {
+  margin-top: 4rem;
+  max-width: 1080px;
+  background: rgba(44, 58, 62, 0.5);
+  border: 1px solid #425155; }
+  .portfolio-grid .title {
+    text-align: center; }
+    .portfolio-grid .title h5 {
+      color: black;
+      color: #e5ef5b;
+      margin-bottom: 10px;
+      padding-top: 30px; }
+    .portfolio-grid .title p {
+      font-size: 16px;
+      margin-bottom: 50px; }
+    .portfolio-grid .title a {
+      color: #4baad4; }
+    .portfolio-grid .title i {
+      margin-left: 8px;
+      vertical-align: center;
+      transform: translate(20%, 20%);
+      font-size: 24px;
+      opacity: .6; }
+    .portfolio-grid .title i:hover {
+      opacity: .7; }
+
+.mobile-logo {
+  position: absolute;
+  width: 65%;
+  left: 70px;
+  top: 20px;
+  opacity: .05;
+  z-index: -5; }
