@@ -4068,7 +4068,7 @@ img.bg {
   margin: 0 0 3rem 3rem;
   padding: 2.5rem;
   border: 1px solid #425155;
-  background: rgba(44, 58, 62, 0.5); }
+  background: #283439; }
 
 .display-text-right {
   color: #868c8e;
@@ -4200,3 +4200,11 @@ img.bg {
       margin-bottom: 50px; }
     .portfolio-grid .title a {
       color: #4baad4; }
+
+.mobile-logo {
+  position: absolute;
+  width: 65%;
+  left: 70px;
+  top: 20px;
+  opacity: .05;
+  z-index: -5; }

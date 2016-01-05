@@ -147,7 +147,7 @@ img.bg {
 	margin: 0 0 3rem 3rem;
 	padding: 2.5rem;
 	border: 1px solid #425155;
-	background: rgba(44, 58, 62, .5);
+	background: rgba(40, 52, 57, 1);
 }
 
 .display-text-right {
@@ -334,4 +334,13 @@ img.bg {
       color: #4baad4;
     }
   }
+}
+
+.mobile-logo {
+  position: absolute;
+  width: 65%;
+  left: 70px;
+  top: 20px;
+  opacity: .05;
+  z-index: -5;
 }
