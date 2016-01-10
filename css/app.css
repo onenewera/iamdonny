@@ -4118,7 +4118,6 @@ img.bg {
 @media screen and (max-width: 810px) {
   .tile {
     margin: 0 auto; } }
-/*jribbble code*/
 .gallery {
   position: relative; }
   .gallery .gallery-feed {
@@ -4139,8 +4138,6 @@ img.bg {
         top: 0;
         margin: 0;
         text-align: center;
-        color: #fefefe;
-        padding-top: 0;
         background: rgba(39, 52, 56, 0.9);
         opacity: 0;
         box-sizing: border-box; }
