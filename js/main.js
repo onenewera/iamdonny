@@ -1,21 +1,5 @@
 jQuery(document).ready(function($){
 
-	$.jribbble.setToken('1220e8337487705bb3bf496f258e5b3a28581b9255f08bbefdca653cf2bfe168');
-	$.jribbble.users('donnywilson').shots({per_page: 9}).then(function(shots) {
-	  var html = [];
-	  shots.forEach(function(shot) {
-	     html.push(
-	            '<li class="tile"><div>'+
-	            '<a class="thumb" target="_blank" href="'+shot.html_url+'" data-lightbox="project" data-title="'+shot.title+'"><figure><i class="fa fa-search-plus"></i></figure>' +
-	            '<img src="'+shot.images.hidpi+'" alt="'+shot.title+'" />' +
-	            '</a>' +
-	            '</div></li>'
-	            );
-	  });
-	  $('.gallery-feed').html(html.join(''));
-	  console.log(html)
-	});
-	 
 	//set animation timing
 	var animationDelay = 2500,
 		//loading bar effect
