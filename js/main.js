@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 	  $('.gallery-feed').html(html.join(''));
 	  console.log(html)
 	});
-	
+	 
 	//set animation timing
 	var animationDelay = 2500,
 		//loading bar effect
