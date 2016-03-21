@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+
 	//set animation timing
 	var animationDelay = 2500,
 		//loading bar effect
@@ -15,7 +16,8 @@ jQuery(document).ready(function($){
 		revealAnimationDelay = 1500;
 	
 	initHeadline();
-	
+
+	Appcues.anonymous();
 
 	function initHeadline() {
 		//insert <i> element for each letter of a changing word
