@@ -1,0 +1,15 @@
+.use-cases {
+	text-align: left;
+
+	.row {
+		margin-top: 95px;
+		padding-bottom: 95px;
+		border-bottom: 1px dotted $light-gray;
+	}
+
+	h2 {
+		color: #4baade;
+		font-weight: 500;
+		letter-spacing: .02em;
+	}
+}

@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  position: fixed;
+  min-width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+  height: 75px;
+  z-index: 2;
+
+  .logo {
+    margin: auto;
+  }
+}
