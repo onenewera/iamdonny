@@ -5,6 +5,19 @@
 /* Success color */
 /* Alert color */
 @import url("http://weloveiconfonts.com/api/?family=entypo");
+.gradient-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4baad4+0,1f9dd3+100 */
+  background: #4baad4;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #4baad4 0%, #1f9dd3 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #4baad4 0%, #1f9dd3 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #4baad4 0%, #1f9dd3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4baad4', endColorstr='#1f9dd3',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
 .footer {
   padding: 35px 0;
   text-align: center; }
@@ -13,7 +26,7 @@
     color: #bbb;
     transition: color .3s; }
   .footer a:hover {
-    color: #4baad4;
+    color: #94acf9;
     cursor: pointer; }
 
 .social {
@@ -32,33 +45,51 @@
   transition: color .3s; }
 
 .social:hover {
-  color: #4baad4;
+  color: #94acf9;
   cursor: pointer; }
 
 .hero {
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4baad4+0,1f9dd3+100 */
-  background: #4baad4;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #4baad4 0%, #1f9dd3 100%);
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #4baad4 0%, #1f9dd3 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #4baad4 0%, #1f9dd3 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4baad4', endColorstr='#1f9dd3',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
   border-bottom: 1px solid #e7e7e7;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 124px;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  background: #94acf9; }
+  .hero h1 {
+    margin-top: 160px; }
   .hero p {
-    margin-top: 40px; }
-  .hero button {
-    margin-top: 20px; }
-  .hero .logo {
-    margin-bottom: 50px; }
+    margin-bottom: 90px; }
+  .hero nav .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1em;
+    padding-top: 10px;
+    text-align: center; }
+  .hero nav .logo-right {
+    opacity: .5;
+    font-weight: 300; }
+  .hero nav .active {
+    opacity: 1 !important;
+    border-bottom: solid 1px #fff; }
+  .hero nav .links {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2em;
+    padding-top: 20px; }
+    .hero nav .links li {
+      display: inline;
+      position: relative;
+      margin-left: 20px;
+      opacity: .7; }
+  .hero nav button {
+    background: #5f7bde;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 15px; }
 
 /*
 * Skeleton V2.0.4
@@ -354,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4.0rem;
   line-height: 1.2;
-  letter-spacing: .1rem; }
+  letter-spacing: .2rem; }
 
 h2 {
   font-size: 3.6rem;
@@ -401,11 +432,12 @@ h6 {
   h6 {
     font-size: 1.5rem; } }
 p {
+  font-size: 16px;
   margin-top: 0; }
 
 h1 {
-  font-size: 42px;
-  text-transform: uppercase; }
+  font-size: 48px;
+  font-weight: 300; }
 
 h2 {
   font-size: 18px;
@@ -425,7 +457,7 @@ input[type="button"] {
   display: inline-block;
   height: 48px;
   padding: 0 40px;
-  color: #fff;
+  color: #94acf9;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -434,8 +466,8 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #34495e;
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 100px;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -451,8 +483,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #fff;
-  background: #273a49; }
+  color: #94acf9;
+  opacity: .9; }
 
 .button.button-primary,
 button.button-primary,
@@ -460,7 +492,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #34495e; }
+  background-color: #fff; }
 
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -544,50 +576,6 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
-nav {
-  display: flex;
-  position: fixed;
-  min-width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #e7e7e7;
-  height: 75px;
-  z-index: 2; }
-  nav .logo {
-    margin: auto; }
-
-.use-cases {
-  text-align: left;
-  max-width: 100%;
-  width: 100%; }
-  .use-cases .row {
-    margin-top: 95px;
-    padding-bottom: 95px;
-    border-bottom: 1px dotted #e7e7e7; }
-  .use-cases h2 {
-    color: #4baade;
-    font-weight: 500;
-    letter-spacing: .02em; }
-
-.cta {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4baad4+0,1f9dd3+100 */
-  background: #4baad4;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #4baad4 0%, #1f9dd3 100%);
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #4baad4 0%, #1f9dd3 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #4baad4 0%, #1f9dd3 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4baad4', endColorstr='#1f9dd3',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-  .cta .row {
-    padding-top: 115px;
-    padding-bottom: 115px; }
-  .cta h1 {
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #fff; }
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -598,6 +586,9 @@ html {
   background: #fff; }
   html .center {
     text-align: center; }
+  html .inline-button {
+    border: 1px solid #fff;
+    background: none !important; }
 
 body {
   font-size: 1.5em;
