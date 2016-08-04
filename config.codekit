@@ -16028,11 +16028,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/practice\/test-build\/css\/time-remaining.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/practice\/test-build\/css\/time-remaining.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/practice\/test-build\/css\/use-cases.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/practice\/test-build\/css\/use-cases.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/practice\/test-build\/css\/video-section.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/practice\/test-build\/css\/video-section.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -16121,6 +16139,17 @@
 		"initialSize": 7226,
 		"inputAbbreviatedPath": "\/practice\/test-build\/images\/shorty.png",
 		"outputAbbreviatedPath": "\/practice\/test-build\/images\/shorty.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/practice\/test-build\/images\/video-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.99043e+06,
+		"inputAbbreviatedPath": "\/practice\/test-build\/images\/video-bg.png",
+		"outputAbbreviatedPath": "\/practice\/test-build\/images\/video-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -16316,6 +16345,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/practice\/test-build\/scss\/time-remaining.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/practice\/test-build\/scss\/time-remaining.scss",
+		"outputAbbreviatedPath": "\/practice\/test-build\/css\/time-remaining.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/practice\/test-build\/scss\/typography.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -16341,6 +16386,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/practice\/test-build\/scss\/use-cases.scss",
 		"outputAbbreviatedPath": "\/practice\/test-build\/css\/use-cases.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/practice\/test-build\/scss\/video-section.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/practice\/test-build\/scss\/video-section.scss",
+		"outputAbbreviatedPath": "\/practice\/test-build\/css\/video-section.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
