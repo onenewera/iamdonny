@@ -1,0 +1,33 @@
+/* Appcues Color Palette */
+
+$white: #fff;
+$light-gray: #e7e7e7;
+
+/* ------------------------------ */
+
+/* Standard blues and other standard colors */
+$purple: #94acf9;
+$dark-purple: #5f7bde;
+$blue-seas: #4baad4;
+$light-blue-seas: #a3d7ee;
+$dark-blue-seas: #42a4d0;
+$scurvy: #34495e;
+$dark-scurvy: #273a49;
+$light-scurvy: #3e5568;
+
+/* Success color */
+$land-lover: #8fce89;
+$dark-land-lover: #74b76c;
+
+/* Alert color */
+$blood-debt: #eb6e5e;
+
+
+.gradient-bg {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4baad4+0,1f9dd3+100 */
+	background: #4baad4; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #4baad4 0%, #1f9dd3 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #4baad4 0%,#1f9dd3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  #4baad4 0%,#1f9dd3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4baad4', endColorstr='#1f9dd3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
