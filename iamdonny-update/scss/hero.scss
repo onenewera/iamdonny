@@ -9,17 +9,17 @@
 
 		&:before {
 			content: '';
-			position: absolute;
-			z-index: -1;
-			bottom: -71px;
-			background: #03A9F4;
-			left: 484px;
-			width: 315px;
-			height: 185%;
-			border-bottom: 19rem solid transparent;
-			-ms-transform: rotate(7deg);
-			-webkit-transform: rotate(7deg);
-			transform: rotate(7deg);
+		    position: absolute;
+		    z-index: -1;
+		    bottom: 14px;
+		    background: #03A9F4;
+		    left: 493px;
+		    width: 315px;
+		    height: 185%;
+		    border-bottom: 19rem solid transparent;
+		    -ms-transform: rotate(7deg);
+		    -webkit-transform: rotate(7deg);
+		    transform: rotate(7deg);
 		}
 	}
 
