@@ -103,30 +103,31 @@
 		.left{
 			-webkit-clip-path: none;
 			clip-path: none;
-			background: linear-gradient(270deg, #42a5f5, #2196f3, #1e88e5, #1976d2, #3f51b5);
-			background-size: 1000% 1000%;
-			width: 100% !important;
+			background: $blue;
+		// 	background: linear-gradient(270deg, #42a5f5, #2196f3, #1e88e5, #1976d2, #3f51b5);
+		// 	background-size: 1000% 1000%;
+		// 	width: 100% !important;
 
-			-webkit-animation: AnimationName 51s ease infinite;
-			-moz-animation: AnimationName 51s ease infinite;
-			animation: AnimationName 51s ease infinite;
+		// 	-webkit-animation: AnimationName 51s ease infinite;
+		// 	-moz-animation: AnimationName 51s ease infinite;
+		// 	animation: AnimationName 51s ease infinite;
 
-			@-webkit-keyframes AnimationName {
-			    0%{background-position:0% 50%}
-			    50%{background-position:100% 51%}
-			    100%{background-position:0% 50%}
-			}
-			@-moz-keyframes AnimationName {
-			    0%{background-position:0% 50%}
-			    50%{background-position:100% 51%}
-			    100%{background-position:0% 50%}
-			}
-			@keyframes AnimationName { 
-			    0%{background-position:0% 50%}
-			    50%{background-position:100% 51%}
-			    100%{background-position:0% 50%}
-			}
-		}
+		// 	@-webkit-keyframes AnimationName {
+		// 	    0%{background-position:0% 50%}
+		// 	    50%{background-position:100% 51%}
+		// 	    100%{background-position:0% 50%}
+		// 	}
+		// 	@-moz-keyframes AnimationName {
+		// 	    0%{background-position:0% 50%}
+		// 	    50%{background-position:100% 51%}
+		// 	    100%{background-position:0% 50%}
+		// 	}
+		// 	@keyframes AnimationName { 
+		// 	    0%{background-position:0% 50%}
+		// 	    50%{background-position:100% 51%}
+		// 	    100%{background-position:0% 50%}
+		// 	}
+		// }
 
 		.cta {
 			z-index: 999;
