@@ -9577,6 +9577,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/images\/author.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4730,
+		"inputAbbreviatedPath": "\/images\/author.png",
+		"outputAbbreviatedPath": "\/images\/author.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/callouts.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

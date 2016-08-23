@@ -40,6 +40,23 @@
 		position: fixed;
 		-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
  		clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+
+ 		.author {
+ 			width: 35px;
+ 			display: block;
+ 			opacity: .8;
+ 		}
+
+ 		button {
+ 			margin-top: 25px;
+ 		}
+
+ 		.fa {
+ 			font-size: 16px;
+ 			color: $white;
+ 			text-decoration: none;
+ 			padding-right: 10px;
+ 		}
 	}
 
 	.cta {
