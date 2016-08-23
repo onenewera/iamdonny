@@ -93,6 +93,9 @@
 
   .hero-image {
     display: none; } }
+@media screen and (max-width: 550px) {
+  .hero .left .content {
+    display: none; } }
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache

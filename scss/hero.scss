@@ -143,3 +143,15 @@
 		display: none;
 	}
 }
+
+@media screen and (max-width: 550px) {
+  .hero {
+
+  	.left {
+
+  		.content {
+  			display: none;
+  		}
+  	}
+  }
+}
