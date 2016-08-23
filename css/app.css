@@ -53,17 +53,15 @@
     text-transform: uppercase; }
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    height: 930px; }
-    .hero .left {
-      -webkit-clip-path: none;
-      clip-path: none;
-      background: linear-gradient(270deg, #42a5f5, #2196f3, #1e88e5, #1976d2, #3f51b5);
-      background-size: 1000% 1000%;
-      width: 100% !important;
-      -webkit-animation: AnimationName 51s ease infinite;
-      -moz-animation: AnimationName 51s ease infinite;
-      animation: AnimationName 51s ease infinite; }
+  .hero .left {
+    -webkit-clip-path: none;
+    clip-path: none;
+    background: linear-gradient(270deg, #42a5f5, #2196f3, #1e88e5, #1976d2, #3f51b5);
+    background-size: 1000% 1000%;
+    width: 100% !important;
+    -webkit-animation: AnimationName 51s ease infinite;
+    -moz-animation: AnimationName 51s ease infinite;
+    animation: AnimationName 51s ease infinite; }
   @-webkit-keyframes AnimationName {
     0% {
       background-position: 0% 50%; }
@@ -85,21 +83,19 @@
       background-position: 100% 51%; }
     100% {
       background-position: 0% 50%; } }
-    .hero .cta {
-      z-index: 999;
-      text-align: center; }
-      .hero .cta .fa-2x {
-        font-size: 3em; }
+  .hero .cta {
+    z-index: 999;
+    text-align: center; }
+    .hero .cta .fa-2x {
+      font-size: 3em; }
 
   .hero-image {
     display: none; } }
 @media screen and (max-width: 550px) {
-  .hero {
-    height: 100%; }
-    .hero .left .content {
-      display: none; }
-    .hero .panel-ctas .panel {
-      padding-right: 25px; } }
+  .hero .left .content {
+    display: none; }
+  .hero .panel-ctas .panel {
+    padding-right: 25px; } }
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
