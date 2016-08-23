@@ -1,0 +1,121 @@
+#animate-area	{  
+	background-image: url(pattern.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.pulse-animation {
+	  height: 80px;
+	  width: 70px;
+	  
+	  background-image:
+	    linear-gradient(white,white),
+	    linear-gradient(white,white),
+	    linear-gradient(white,white),
+	    linear-gradient(white,white),
+	    linear-gradient(white,white),
+	    linear-gradient(white,white),
+	    linear-gradient(white,white);
+	  
+	  background-position: 
+	    calc(50% - 30px) 50%,
+	    calc(50% - 20px) 50%,
+	    calc(50% - 10px) 50%,
+	    50% 50%,
+	    calc(50% + 10px) 50%,
+	    calc(50% + 20px) 50%,
+	    calc(50% + 30px) 50%;
+	  
+	  background-size: 
+	    5px 10px,
+	    5px 10px,
+	    5px 10px,
+	    5px 10px,
+	    5px 10px,
+	    5px 10px,
+	    5px 10px;
+	  background-repeat: no-repeat;
+	  
+	  animation: l-bars 1s linear infinite alternate;
+	  }
+
+	@keyframes l-bars {
+	  0% {  
+	    background-size: 
+	      5px 30px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px;
+	    }
+	  16.6% {  
+	    background-size: 
+	      5px 10px,
+	      5px 40px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px;
+	    }
+	  33.2% {  
+	    background-size: 
+	      5px 10px,
+	      5px 10px,
+	      5px 40px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px;
+	    }
+	  49.8% {  
+	    background-size: 
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 40px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px;
+	    }
+	  66.4% {  
+	    background-size: 
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 40px,
+	      5px 10px,
+	      5px 10px;
+	    }
+	  83% {  
+	    background-size: 
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 40px,
+	      5px 10px;
+	    }
+	  100% {  
+	    background-size: 
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 10px,
+	      5px 40px;
+	    }
+
+}

@@ -1,0 +1,201 @@
+.panel-ctas {
+	width: 350px;
+	height: 100%;
+	position: absolute;
+	right: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.panel {
+		width: 100%;
+
+		a {
+			color: $white;
+		}
+
+		h1 {
+			font-size: 12px;
+			letter-spacing: .1rem;
+			text-transform: none;
+			margin-bottom: 0px;
+			padding-top: 18px;
+			font-weight: 600;
+		}
+
+		p {
+			font-size: 11px;
+			font-weight: 100;
+			margin-bottom: 0px;
+			margin-top: 5px;
+			letter-spacing: .1rem;
+		}
+
+		button {
+			font-size: 8px;
+			padding: 10px 15px;
+			line-height: 0px;
+			height: 0px;
+			border: 1px solid $white;
+			margin-top: 10px;
+		}
+
+		.resume {
+			background: $green;
+			height: 100px;
+			width: 100%;
+			display: block;
+			margin-bottom: 15px;
+			align-self: flex-start;
+			border-radius: 5px;
+			transition: all ease .5s;
+			-webkit-box-shadow: 5px 6px 26px -15px rgba(0,0,0,0.64);
+			-moz-box-shadow: 5px 6px 26px -15px rgba(0,0,0,0.64);
+			box-shadow: 5px 6px 26px -15px rgba(0,0,0,0.64);
+
+			button {
+				border: 1px solid #bbb;
+			}
+
+			&:hover {
+				top: -5px;
+				-webkit-box-shadow: 5px 6px 26px -9px rgba(0,0,0,0.64);
+				-moz-box-shadow: 5px 6px 26px -9px rgba(0,0,0,0.64);
+				box-shadow: 5px 6px 26px -9px rgba(0,0,0,0.64);
+
+				.icon {
+					padding-top: 22px;
+					opacity: 1;
+				}
+
+				button {
+					border: 1px solid $white;
+				}
+			}
+
+			.icon {
+				width: 100px;
+				height: 100%;
+				border-radius: 5px 0px 0px 5px;
+				background: $dark-green;
+				text-align: center;
+				padding-top: 25px;
+				opacity: .8;
+				transition: all ease .5s;
+			}
+		}
+
+		.dribble {
+			background: $orange;
+			height: 100px;
+			width: 100%;
+			display: block;
+			margin-bottom: 15px;
+			align-self: flex-start;
+			border-radius: 5px;
+			transition: all ease .5s;
+			-webkit-box-shadow: 5px 6px 26px -15px rgba(0,0,0,0.64);
+			-moz-box-shadow: 5px 6px 26px -15px rgba(0,0,0,0.64);
+			box-shadow: 5px 6px 26px -15px rgba(0,0,0,0.64);
+
+			button {
+				border: 1px solid #bbb;
+			}
+
+			&:hover {
+				top: -5px;
+				-webkit-box-shadow: 5px 6px 26px -9px rgba(0,0,0,0.64);
+				-moz-box-shadow: 5px 6px 26px -9px rgba(0,0,0,0.64);
+				box-shadow: 5px 6px 26px -9px rgba(0,0,0,0.64);
+
+				.icon {
+					padding-top: 22px;
+					opacity: 1;
+					background: rgba(255, 255,255, .1);
+				}
+
+				button {
+					border: 1px solid $white;
+				}
+			}
+
+			.icon {
+				width: 100px;
+				height: 100%;
+				border-radius: 5px 0px 0px 5px;
+				background: none;
+				text-align: center;
+				padding-top: 25px;
+				opacity: .8;
+				transition: all ease .5s;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.panel-ctas {
+		left: 25px;
+		right: none;
+		align-items: flex-end;
+		z-index: 4;
+		pointer-events: none;
+
+		.panel {
+			margin-bottom: 35%;
+			pointer-events: auto;
+
+			.resume {
+
+				.icon {
+					width: 100%;
+					opacity: 1;
+					padding-right: 50px;
+					border-radius: 5px;
+
+					&:after {
+						content: "Resume";
+						font-size: 14px;
+						position: absolute;
+						padding-left: 15px;
+						padding-top: 15px;
+						color: $white;
+						font-weight: 100;
+						text-transform: uppercase;
+						letter-spacing: .3rem;
+					}
+				}
+
+				.content {
+					display: none;
+				}
+			}
+
+			.dribble {
+
+				.icon {
+					width: 100%;
+					opacity: 1;
+					padding-right: 50px;
+					border-radius: 5px;
+
+					&:after {
+						content: "Work";
+						font-size: 14px;
+						position: absolute;
+						padding-left: 15px;
+						padding-top: 15px;
+						color: $white;
+						font-weight: 100;
+						text-transform: uppercase;
+						letter-spacing: .3rem;
+					}
+				}
+
+				.content {
+					display: none;
+				}
+			}
+		}
+	}
+}
