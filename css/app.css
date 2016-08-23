@@ -94,10 +94,12 @@
   .hero-image {
     display: none; } }
 @media screen and (max-width: 550px) {
-  .hero .left .content {
-    display: none; }
-  .hero .panel-ctas .panel {
-    padding-right: 25px; } }
+  .hero {
+    height: 100%; }
+    .hero .left .content {
+      display: none; }
+    .hero .panel-ctas .panel {
+      padding-right: 25px; } }
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
