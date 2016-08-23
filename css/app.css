@@ -1,63 +1,789 @@
+@charset "UTF-8";
+/* Color Palette */
+/* ------------------------------ */
+.hero-image {
+  position: absolute;
+  right: 230px;
+  top: 80px;
+  z-index: -3; }
+
+.hero {
+  height: 100vh;
+  color: #fff; }
+  .hero .left {
+    background: #03A9F4;
+    height: 100%;
+    padding-top: 15%;
+    padding-left: 6rem;
+    z-index: 3;
+    position: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); }
+    .hero .left .author {
+      width: 35px;
+      display: block;
+      opacity: .8; }
+    .hero .left button {
+      margin-top: 25px; }
+    .hero .left .fa {
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      padding-right: 10px; }
+  .hero .cta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #8BC34A;
+    padding: 20px 25px 20px 20px;
+    width: 100%;
+    z-index: 1;
+    text-align: right; }
+    .hero .cta .social a {
+      margin-left: 40px;
+      color: #fff;
+      opacity: .8;
+      transition: all ease .5s; }
+      .hero .cta .social a:hover {
+        opacity: 1; }
+  .hero h1 {
+    text-transform: uppercase;
+    font-weight: 600; }
+  .hero h5 {
+    text-transform: uppercase; }
+
+@media screen and (max-width: 1024px) {
+  .hero .left {
+    -webkit-clip-path: none;
+    clip-path: none;
+    background: #03A9F4; }
+  .hero .cta {
+    z-index: 999;
+    text-align: center; }
+    .hero .cta .fa-2x {
+      font-size: 3em; }
+
+  .hero-image {
+    display: none; } }
+@media screen and (max-width: 550px) {
+  .hero {
+    height: auto; }
+    .hero .left .content {
+      display: none; }
+    .hero .panel-ctas {
+      height: auto;
+      padding-top: 150px; }
+      .hero .panel-ctas .panel {
+        padding-right: 25px; } }
 /*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 167 of /Users/Donny/Desktop/Desktop/Random/Git/iamdonny/scss/hero.scss
-        from line 2 of /Users/Donny/Desktop/Desktop/Random/Git/iamdonny/scss/app.scss
-
-162:   		.panel {
-163:   			padding-right: 25px;
-164:   		}
-165:   	}
-166:   }
-167: }
-
-Backtrace:
-/Users/Donny/Desktop/Desktop/Random/Git/iamdonny/scss/hero.scss:167
-/Users/Donny/Desktop/Desktop/Random/Git/iamdonny/scss/app.scss:2
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1179:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1115:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1110:in `tok!'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:656:in `block'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:407:in `media_directive'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:220:in `special_directive'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:195:in `directive'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:673:in `block_child'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:666:in `block_contents'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:123:in `stylesheet'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:39:in `parse'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:403:in `_to_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:309:in `to_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 167 of /Users/Donny/Desktop/Desktop/Random/Git/iamdonny/scss/hero.scss\A         from line 2 of /Users/Donny/Desktop/Desktop/Random/Git/iamdonny/scss/app.scss\A \A 162:   		.panel {\A 163:   			padding-right: 25px;\A 164:   		}\A 165:   	}\A 166:   }\A 167: }"; }
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; } }
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+
+  .column,
+  .columns {
+    margin-left: 4%; }
+
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%; }
+
+  .two.columns {
+    width: 13.3333333333%; }
+
+  .three.columns {
+    width: 22%; }
+
+  .four.columns {
+    width: 30.6666666667%; }
+
+  .five.columns {
+    width: 39.3333333333%; }
+
+  .six.columns {
+    width: 48%; }
+
+  .seven.columns {
+    width: 56.6666666667%; }
+
+  .eight.columns {
+    width: 65.3333333333%; }
+
+  .nine.columns {
+    width: 74.0%; }
+
+  .ten.columns {
+    width: 82.6666666667%; }
+
+  .eleven.columns {
+    width: 91.3333333333%; }
+
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0; }
+
+  .one-third.column {
+    width: 30.6666666667%; }
+
+  .two-thirds.column {
+    width: 65.3333333333%; }
+
+  .one-half.column {
+    width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%; }
+
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%; }
+
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%; }
+
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%; }
+
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%; }
+
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%; }
+
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%; }
+
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%; }
+
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%; }
+
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%; }
+
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%; }
+
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%; } }
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+
+ol {
+  list-style: decimal inside; }
+
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+li {
+  margin-bottom: 1rem; }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.u-pull-right {
+  float: right; }
+
+.u-pull-left {
+  float: left; }
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300; }
+
+h1 {
+  font-size: 6.0rem;
+  line-height: 1.2;
+  letter-spacing: .5rem;
+  margin-bottom: 1rem; }
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem; }
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 1.35;
+  letter-spacing: .05rem;
+  margin-bottom: 2rem; }
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: .5rem; }
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 6.0rem; }
+
+  h2 {
+    font-size: 4.2rem; }
+
+  h3 {
+    font-size: 3.6rem; }
+
+  h4 {
+    font-size: 2.5rem; }
+
+  h5 {
+    font-size: 1.4rem; }
+
+  h6 {
+    font-size: 1.5rem; } }
+p {
+  margin-top: 0; }
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  transition: all ease .5s;
+  border-radius: 4px;
+  border: 1px solid #85DBF9;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #fff;
+  border-color: #fff;
+  outline: 0; }
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff; }
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #white;
+  background-color: #1EAEDB;
+  border-color: #fff; }
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  position: fixed;
+  z-index: 999; }
+  .nav a {
+    color: #90A4AE;
+    text-decoration: none;
+    transition: all ease .5s;
+    letter-spacing: .2rem;
+    font-weight: lighter;
+    opacity: .6;
+    font-size: 11px;
+    text-transform: uppercase;
+    transition: all ease .5s; }
+    .nav a:hover {
+      opacity: 1;
+      color: #90A4AE; }
+  .nav .logo {
+    padding: 18px 0px 0px 20px; }
+  .nav .links {
+    text-align: right;
+    padding: 18px 20px 0px 0px; }
+    .nav .links li {
+      display: inline;
+      margin-left: 45px; }
+
+@media screen and (max-width: 1024px) {
+  .nav a {
+    color: #fff; }
+    .nav a:hover {
+      color: #fff; } }
+@media screen and (max-width: 550px) {
+  .nav .links {
+    display: none; } }
+.panel-ctas {
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .panel-ctas .panel {
+    width: 100%; }
+    .panel-ctas .panel a {
+      color: #fff; }
+    .panel-ctas .panel h1 {
+      font-size: 12px;
+      letter-spacing: .1rem;
+      text-transform: none;
+      margin-bottom: 0px;
+      padding-top: 18px;
+      font-weight: 600; }
+    .panel-ctas .panel p {
+      font-size: 11px;
+      font-weight: 100;
+      margin-bottom: 0px;
+      margin-top: 5px;
+      letter-spacing: .1rem; }
+    .panel-ctas .panel button {
+      font-size: 8px;
+      padding: 10px 15px;
+      line-height: 0px;
+      height: 0px;
+      border: 1px solid #fff;
+      margin-top: 10px; }
+    .panel-ctas .panel .resume {
+      background: #8BC34A;
+      height: 100px;
+      width: 100%;
+      display: block;
+      margin-bottom: 15px;
+      align-self: flex-start;
+      border-radius: 5px;
+      transition: all ease .5s;
+      -webkit-box-shadow: 5px 6px 26px -15px rgba(0, 0, 0, 0.64);
+      -moz-box-shadow: 5px 6px 26px -15px rgba(0, 0, 0, 0.64);
+      box-shadow: 5px 6px 26px -15px rgba(0, 0, 0, 0.64); }
+      .panel-ctas .panel .resume button {
+        border: 1px solid rgba(255, 255, 255, 0.5); }
+      .panel-ctas .panel .resume:hover {
+        top: -5px;
+        -webkit-box-shadow: 5px 6px 26px -9px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 5px 6px 26px -9px rgba(0, 0, 0, 0.64);
+        box-shadow: 5px 6px 26px -9px rgba(0, 0, 0, 0.64); }
+        .panel-ctas .panel .resume:hover .icon {
+          padding-top: 22px;
+          opacity: 1; }
+        .panel-ctas .panel .resume:hover button {
+          border: 1px solid #fff; }
+      .panel-ctas .panel .resume .icon {
+        width: 100px;
+        height: 100%;
+        border-radius: 5px 0px 0px 5px;
+        background: #7CB342;
+        text-align: center;
+        padding-top: 25px;
+        opacity: .8;
+        transition: all ease .5s; }
+    .panel-ctas .panel .dribble {
+      background: #FFC107;
+      height: 100px;
+      width: 100%;
+      display: block;
+      margin-bottom: 15px;
+      align-self: flex-start;
+      border-radius: 5px;
+      transition: all ease .5s;
+      -webkit-box-shadow: 5px 6px 26px -15px rgba(0, 0, 0, 0.64);
+      -moz-box-shadow: 5px 6px 26px -15px rgba(0, 0, 0, 0.64);
+      box-shadow: 5px 6px 26px -15px rgba(0, 0, 0, 0.64); }
+      .panel-ctas .panel .dribble button {
+        border: 1px solid rgba(255, 255, 255, 0.5); }
+      .panel-ctas .panel .dribble:hover {
+        top: -5px;
+        -webkit-box-shadow: 5px 6px 26px -9px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 5px 6px 26px -9px rgba(0, 0, 0, 0.64);
+        box-shadow: 5px 6px 26px -9px rgba(0, 0, 0, 0.64); }
+        .panel-ctas .panel .dribble:hover .icon {
+          padding-top: 22px;
+          opacity: 1;
+          background: rgba(255, 255, 255, 0.1); }
+        .panel-ctas .panel .dribble:hover button {
+          border: 1px solid #fff; }
+      .panel-ctas .panel .dribble .icon {
+        width: 100px;
+        height: 100%;
+        border-radius: 5px 0px 0px 5px;
+        background: none;
+        text-align: center;
+        padding-top: 25px;
+        opacity: .8;
+        transition: all ease .5s; }
+
+@media screen and (max-width: 1024px) {
+  .panel-ctas {
+    left: 25px;
+    right: none;
+    align-items: flex-end;
+    z-index: 4;
+    pointer-events: none; }
+    .panel-ctas .panel {
+      margin-bottom: 35%;
+      pointer-events: auto; }
+      .panel-ctas .panel .resume .icon {
+        width: 100%;
+        opacity: 1;
+        padding-right: 50px;
+        border-radius: 5px; }
+        .panel-ctas .panel .resume .icon:after {
+          content: "Resume";
+          font-size: 14px;
+          position: absolute;
+          padding-left: 15px;
+          padding-top: 15px;
+          color: #fff;
+          font-weight: 100;
+          text-transform: uppercase;
+          letter-spacing: .3rem; }
+      .panel-ctas .panel .resume .content {
+        display: none; }
+      .panel-ctas .panel .dribble .icon {
+        width: 100%;
+        opacity: 1;
+        padding-right: 50px;
+        border-radius: 5px; }
+        .panel-ctas .panel .dribble .icon:after {
+          content: "Work";
+          font-size: 14px;
+          position: absolute;
+          padding-left: 15px;
+          padding-top: 15px;
+          color: #fff;
+          font-weight: 100;
+          text-transform: uppercase;
+          letter-spacing: .3rem; }
+      .panel-ctas .panel .dribble .content {
+        display: none; } }
+#animate-area {
+  background-image: url(pattern.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 40s linear infinite; }
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+.pulse-animation {
+  height: 80px;
+  width: 70px;
+  background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white);
+  background-position: calc(50% - 30px) 50%, calc(50% - 20px) 50%, calc(50% - 10px) 50%, 50% 50%, calc(50% + 10px) 50%, calc(50% + 20px) 50%, calc(50% + 30px) 50%;
+  background-size: 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px;
+  background-repeat: no-repeat;
+  animation: l-bars 1s linear infinite alternate; }
+
+@keyframes l-bars {
+  0% {
+    background-size: 5px 30px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px; }
+  16.6% {
+    background-size: 5px 10px, 5px 40px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px; }
+  33.2% {
+    background-size: 5px 10px, 5px 10px, 5px 40px, 5px 10px, 5px 10px, 5px 10px, 5px 10px; }
+  49.8% {
+    background-size: 5px 10px, 5px 10px, 5px 10px, 5px 40px, 5px 10px, 5px 10px, 5px 10px; }
+  66.4% {
+    background-size: 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 40px, 5px 10px, 5px 10px; }
+  83% {
+    background-size: 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 40px, 5px 10px; }
+  100% {
+    background-size: 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 40px; } }
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+.hero-image {
+  position: absolute;
+  right: 230px;
+  top: 80px;
+  z-index: -3; }
