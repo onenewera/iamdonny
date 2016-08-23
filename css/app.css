@@ -12,6 +12,7 @@
   color: #fff; }
   .hero .left {
     background: #03A9F4;
+    padding-right: 100px;
     height: 100%;
     padding-top: 15%;
     padding-left: 6rem;
@@ -57,6 +58,7 @@
     -webkit-clip-path: none;
     clip-path: none;
     background: #03A9F4;
+    padding-right: 0;
     width: 100% !important; }
   .hero .cta {
     z-index: 999;
@@ -69,8 +71,10 @@
 @media screen and (max-width: 550px) {
   .hero {
     height: auto; }
-    .hero .left .content {
-      display: none; }
+    .hero .left {
+      padding-right: 0; }
+      .hero .left .content {
+        display: none; }
     .hero .panel-ctas {
       height: auto;
       padding-top: 150px; }
