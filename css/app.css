@@ -56,7 +56,8 @@
   .hero .left {
     -webkit-clip-path: none;
     clip-path: none;
-    background: #03A9F4; }
+    background: #03A9F4;
+    width: 100% !important; }
   .hero .cta {
     z-index: 999;
     text-align: center; }
