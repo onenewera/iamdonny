@@ -96,8 +96,11 @@
     height: auto; }
     .hero .left .content {
       display: none; }
-    .hero .panel-ctas .panel {
-      padding-right: 25px; } }
+    .hero .panel-ctas {
+      height: auto;
+      padding-top: 50px; }
+      .hero .panel-ctas .panel {
+        padding-right: 25px; } }
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache

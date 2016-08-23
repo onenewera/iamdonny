@@ -146,7 +146,7 @@
 @media screen and (max-width: 550px) {
   .hero {
   	height: auto;
-  	
+
   	.left {
 
   		.content {
@@ -155,6 +155,9 @@
   	}
 
   	.panel-ctas {
+  		height: auto;
+  		padding-top: 50px;
+  		
   		.panel {
   			padding-right: 25px;
   		}
