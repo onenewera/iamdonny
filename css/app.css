@@ -11,8 +11,12 @@
   height: 100vh;
   color: #fff; }
   .hero .left {
-    background: #03A9F4;
     padding-right: 100px;
+    background: linear-gradient(270deg, #42a5f5, #2196f3, #1e88e5, #1976d2, #3f51b5);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 51s ease infinite;
+    -moz-animation: AnimationName 51s ease infinite;
+    animation: AnimationName 51s ease infinite;
     height: 100%;
     padding-top: 13%;
     padding-left: 6rem;
@@ -20,6 +24,27 @@
     position: fixed;
     -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); }
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 51%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 51%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 51%; }
+  100% {
+    background-position: 0% 50%; } }
     .hero .left .cta {
       position: absolute;
       bottom: 0;
