@@ -632,6 +632,7 @@ label > .label-body {
   height: 100%;
   position: absolute;
   right: 25px;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center; }
