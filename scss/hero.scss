@@ -42,14 +42,6 @@
 		-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
  		clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 
- 		.author {
- 			width: 35px;
- 			display: inline;
- 			opacity: .8;
- 			padding-right: 25px;
- 			padding-top: 15px;
- 		}
-
  		button {
  			margin-top: 25px;
  		}
@@ -93,6 +85,8 @@
 	}
 
 	h4 {
+		letter-spacing: .2rem;
+		font-weight: 300;
 	}
 
 	h5 {
