@@ -780,10 +780,10 @@ label > .label-body {
       .panel-ctas .panel .dribble .content {
         display: none; } }
 #animate-area {
-  background-image: url(http://iamdonny.com/images/updatedstates.png);
-  background-position: 0px 0px;
+  background-image: url(http://iamdonny.com/images/updatedstates.jpg);
+  background-position: 0px 0px 0px 0px;
   background-repeat: repeat-x;
-  animation: animatedBackground 20s linear infinite; }
+  animation: animatedBackground 1s linear infinite; }
 
 @keyframes animatedBackground {
   from {
