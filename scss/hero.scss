@@ -34,12 +34,17 @@
 		    100%{background-position:0% 50%}
 		}
 		height: 100%;
-		padding-top: 13%;
 		padding-left: 6rem;
 		z-index: 3;
 		position: fixed;
 		-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
  		clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+
+ 		.left-bar {
+ 			height: 100%;
+ 			display: flex;
+ 			align-items: center;
+ 		}
 
  		.cta {
  			position: absolute;
@@ -153,6 +158,11 @@
 
   	.left {
   		padding-right: 0;
+
+  		.left-bar {
+ 			align-items: flex-start;
+ 			padding-top: 100px;
+  		}
 
   		.content {
   			display: none;
