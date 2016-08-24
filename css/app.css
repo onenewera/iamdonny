@@ -813,6 +813,15 @@ label > .label-body {
     background-size: 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 40px, 5px 10px; }
   100% {
     background-size: 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 10px, 5px 40px; } }
+.divider-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
