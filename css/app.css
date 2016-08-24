@@ -60,23 +60,28 @@
       z-index: 1;
       text-align: left; }
       .hero .left .cta .social .tooltip {
-        display: none;
+        display: inline;
         font-size: 8px;
         text-transform: uppercase;
         letter-spacing: .2rem;
         text-decoration: none !important;
-        transition: all ease .5s; }
+        transition: all ease .5s;
+        opacity: 0;
+        top: 0; }
       .hero .left .cta .social a {
-        margin-left: 35px;
         color: #fff;
+        margin-right: 10px;
         opacity: .8;
         transition: all ease .5s; }
+        .hero .left .cta .social a:first-child {
+          margin-left: 35px; }
         .hero .left .cta .social a:hover {
           opacity: 1; }
           .hero .left .cta .social a:hover .tooltip {
-            display: inline; }
+            opacity: 1; }
       .hero .left .cta .social .fa {
-        font-size: 28px; }
+        font-size: 28px;
+        vertical-align: middle; }
     .hero .left .fa {
       font-size: 16px;
       color: #fff;

@@ -60,31 +60,38 @@
 
  			.social {
  				.tooltip {
- 					display: none;
+ 					display: inline;
  					font-size: 8px;
  					text-transform: uppercase;
  					letter-spacing: .2rem;
  					text-decoration: none !important;
  					transition: all ease .5s;
+ 					opacity: 0;
+ 					top: 0;
  				}
 
  				a {
- 					margin-left: 35px;
  					color: $white;
+ 					margin-right: 10px;
  					opacity: .8;
  					transition: all ease .5s;
+
+ 					&:first-child {
+ 						margin-left: 35px;
+ 					}
 
  					&:hover {
  						opacity: 1;
 
  						.tooltip {
- 							display: inline;
+ 							opacity: 1;
  						}
  					}
  				}
 
  				.fa {
  					font-size: 28px;
+ 					vertical-align: middle;
  				}
  			}
  		}
