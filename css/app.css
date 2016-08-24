@@ -783,7 +783,7 @@ label > .label-body {
   background-image: url(http://iamdonny.com/images/updatedstates.jpg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
-  animation: animatedBackground 10s linear infinite; }
+  animation: animatedBackground 15s linear infinite; }
 
 @keyframes animatedBackground {
   from {
