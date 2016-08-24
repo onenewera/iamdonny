@@ -42,8 +42,34 @@
 		-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
  		clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 
- 		button {
- 			margin-top: 25px;
+ 		.cta {
+ 			position: absolute;
+ 			bottom: 0;
+ 			right: 0;
+ 			background: none;
+ 			padding: 20px 25px 20px 20px;
+ 			width: 100%;
+ 			z-index: 1;
+ 			text-align: left;
+
+ 			.social {
+ 				margin-left: 13px;
+
+ 				a {
+ 					margin-left: 40px;
+ 					color: $white;
+ 					opacity: .8;
+ 					transition: all ease .5s;
+
+ 					&:hover {
+ 						opacity: 1;
+ 					}
+ 				}
+
+ 				.fa {
+ 					font-size: 28px;
+ 				}
+ 			}
  		}
 
  		.fa {
@@ -52,31 +78,10 @@
  			text-decoration: none;
  			padding-right: 10px;
  		}
-	}
 
-	.cta {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		background: $green;
-		padding: 20px 25px 20px 20px;
-		width: 100%;
-		z-index: 1;
-		text-align: right;
-
-		.social {
-
-			a {
-				margin-left: 40px;
-				color: $white;
-				opacity: .8;
-				transition: all ease .5s;
-
-				&:hover {
-					opacity: 1;
-				}
-			}
-		}
+ 		button {
+ 			margin-top: 25px;
+ 		} 
 	}
 
 	h1 {
@@ -127,14 +132,14 @@
 		// 	    100%{background-position:0% 50%}
 		// 	}
 		// }
-		}
 
-		.cta {
-			z-index: 999;
-			text-align: center;
+			.cta {
+				z-index: 999;
+				text-align: center;
 
-			.fa-2x {
-				font-size: 3em;
+				.fa-2x {
+					font-size: 3em;
+				}
 			}
 		}
 	}
