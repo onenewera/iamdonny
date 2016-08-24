@@ -781,9 +781,9 @@ label > .label-body {
         display: none; } }
 #animate-area {
   background-image: url(http://iamdonny.com/images/updatedstates.jpg);
-  background-position: 0px 0px 0px 0px;
+  background-position: 0px 0px;
   background-repeat: repeat-x;
-  animation: animatedBackground 1s linear infinite; }
+  animation: animatedBackground 10s linear infinite; }
 
 @keyframes animatedBackground {
   from {
