@@ -9643,6 +9643,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/updatedstates.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35572,
+		"inputAbbreviatedPath": "\/images\/updatedstates.png",
+		"outputAbbreviatedPath": "\/images\/updatedstates.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/wilson-logo-gray.png": {
 		"fileType": 32768,
 		"ignore": 0,
