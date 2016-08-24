@@ -59,6 +59,14 @@
  			text-align: left;
 
  			.social {
+ 				.tooltip {
+ 					display: none;
+ 					font-size: 8px;
+ 					text-transform: uppercase;
+ 					letter-spacing: .2rem;
+ 					text-decoration: none !important;
+ 					transition: all ease .5s;
+ 				}
 
  				a {
  					margin-left: 35px;
@@ -68,6 +76,10 @@
 
  					&:hover {
  						opacity: 1;
+
+ 						.tooltip {
+ 							display: inline;
+ 						}
  					}
  				}
 
