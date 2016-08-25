@@ -83,6 +83,7 @@
     width: 100% !important; }
     .hero .left .cta {
       z-index: 999;
+      width: 100%;
       text-align: center; }
       .hero .left .cta .fa-2x {
         font-size: 3em; }
