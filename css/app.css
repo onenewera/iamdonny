@@ -111,6 +111,9 @@
       text-align: center; }
       .hero .left .cta .fa-2x {
         font-size: 3em; }
+    .hero .left .left-bar {
+      align-items: center;
+      padding-top: 100px; }
 
   .hero-image {
     display: none; } }
