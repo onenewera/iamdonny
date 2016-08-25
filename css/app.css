@@ -112,7 +112,7 @@
       .hero .left .cta .fa-2x {
         font-size: 3em; }
     .hero .left .left-bar {
-      align-items: center;
+      align-items: flex-start;
       padding-top: 100px; }
 
   .hero-image {
