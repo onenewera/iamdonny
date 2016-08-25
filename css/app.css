@@ -639,6 +639,10 @@ label > .label-body {
       margin-left: 45px; }
 
 @media screen and (max-width: 1024px) {
+  .nav .links {
+    position: absolute;
+    top: 0;
+    right: 0; }
   .nav a {
     color: #fff; }
     .nav a:hover {
