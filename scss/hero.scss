@@ -1,7 +1,7 @@
 .slider-image {
 	width: 100%;
 	height: 100%;
-	
+
 	.hero-image {
 		position: absolute;
 		z-index: -3;
@@ -19,7 +19,8 @@
 
 	.left {
 		padding-right: 100px;
-		background: $blue;
+		background: $white;
+		border: 2px solid $blue;
 		// background: linear-gradient(270deg, #42a5f5, #2196f3, #1e88e5, #1976d2, #3f51b5);
 		// background-size: 1000% 1000%;
 
