@@ -1,0 +1,58 @@
+.loader {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding-top: 17%;
+
+  img {
+    margin-top: 15px;
+    margin-left: 10px;
+    opacity: 1;
+  }
+
+  .ball {
+    width: 50px;
+    height: 50px;
+    background-color: $blue;
+    border-radius: 50%;
+    margin: 200px auto 0;
+    animation: ball 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+    animation-delay: 0;
+    margin: auto;
+  }
+  .shadow {
+    width: 50px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $blue;
+    display:block;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+    opacity: 0.7;
+     animation: shadow 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+    animation-delay: 0;
+  }
+  @keyframes ball {
+    0%{transform: translateY(0px);}
+    100% {transform: translateY(-150px);}
+  }
+  @keyframes shadow {
+    0%{transform: scale(.5);}
+    100% {transform: scale(1.1); opacity:.1;}
+  }
+}
+
+.loader-overlay {
+  position: absolute;
+  background: $white;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 550px) {
+  .loader {
+    padding-top: 45%;
+  }
+}
