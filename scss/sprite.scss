@@ -1,0 +1,22 @@
+@keyframes icon-one-animation {     
+	100% {           
+		// 1000px is the total width of the sprite sheet          
+		background-position: -1000px;     
+		} 
+}  
+
+.icon-one {     
+	width: 100px;     
+	height: 100px;     
+	background: url('icon-one-sprite-sheet.png') left center;      
+
+	&__play--once {          
+		// Sprite sheet is made up of 10 frames          
+		animation: icon-one-animation 0.5s steps(10);     
+	}      
+
+	&__play--forever {          
+	// Sprite sheet is made up of 10 frames          
+	animation: icon-one-animation 0.5s steps(10) infinite;      
+	} 
+}

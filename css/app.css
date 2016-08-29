@@ -1034,6 +1034,18 @@ Main Components
     .cd-modal-close {
       top: 70px; } }
 
+@keyframes icon-one-animation {
+  100% {
+    background-position: -1000px; } }
+.icon-one {
+  width: 100px;
+  height: 100px;
+  background: url("icon-one-sprite-sheet.png") left center; }
+  .icon-one__play--once {
+    animation: icon-one-animation 0.5s steps(10); }
+  .icon-one__play--forever {
+    animation: icon-one-animation 0.5s steps(10) infinite; }
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
