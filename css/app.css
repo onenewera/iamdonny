@@ -1051,6 +1051,10 @@ Main Components
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
+* {
+  padding: 0;
+  margin: 0; }
+
 html {
   font-size: 62.5%; }
 
