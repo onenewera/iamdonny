@@ -107,6 +107,10 @@ body,html {
   transform: rotate(-10deg);
 }
 
+.playing .sound {
+  color: #fff;
+}
+
 kbd {
   display: block;
   font-size: 60px;
