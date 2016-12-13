@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey there!</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jribbble.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/min/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </head>
+  <body>
+    
+  <!-- This is Appcues -->
+  <script src="//fast.appcues.com/16161.js"></script>
+  <script type="text/javascript">
+          Appcues.anonymous();
+      </script>
+
+  <img src="img/wilson-logo-gray.png" class="mobile-logo show-for-small-only">
+
+  <div class="cta show-for-small-only wow slideInLeft" data-wow-delay="2s">
+    <p>Want to work together?<a class="work-button" href="mailto:heydwilson@gmail.com?subject=Let's Work Together!&body=I have a great project.">Let's do it<i class="fa fa-long-arrow-right icon"></i></a></p>
+  </div>
+
+    <div class="hide-for-small-only top-bar wow slideInDown" data-wow-delay="2s">
+      <div class="row">
+        <div class="large-3 medium-2 columns text-left">
+          <img src="img/wilson-logo-gray.png" class="logo" width="30px">
+        </div>
+        <div class="large-9 medium-6 columns text-right">
+          <ul class="menu-items">
+            <li><a class="signup" href="mailto:heydwilson@gmail.com?subject=Let's Work Together!&body=I have a great project.">Let's work on something</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns hero">
+        <p class="subheader uppercase cd-headline letters type hook-head wow fadeIn" data-wow-delay="1.3s">
+            <span class="cd-words-wrapper waiting">
+              <b class="is-visible">-product-</b>
+              <b>-web-</b>
+              <b>-UX-</b>
+              <b>-UI-</b>
+              <b>-app-</b>
+              <b>-graphic-</b>
+            </span>
+        </p>
+        <h1 class="uppercase text-center wow fadeIn" data-wow-delay="1.5s">Designer</h1>
+        <div class="row">
+          <div class="large-6 columns">
+            <div class="display-text-left wow fadeIn" data-wow-delay="1.6s"><h5>Hey, My name is Donald</h5><br>My friends call me Donny. I am a designer <em>(product, marketing, ux, you name it!)</em> with a passion for front end <em>(I developed this site - git, sublime, codekit, and foundation).</em><br><br>
+            Currently at <strong><a href="http://www.appcues.com">Appcues</a></strong>, formerly at <strong><a href="http://www.impactbnd.com">Impactbnd</a></strong>.
+            </div>
+          </div>
+          <div class="large-6 columns">
+            <div class="display-text-right wow fadeIn" data-wow-delay="1.8s">I am always looking and available for new side projects. Let me know what you have in mind and we can go from there. Until then check out some of my links below and be sure to show some love on dribbble!<br>
+
+            <ul class="inline-list text-left">
+              <li><a target="_blank" href="https://github.com/onenewera"><i class="fa fa-github-square"></i></a></li>
+              <li><a target="_blank" href="https://dribbble.com/donnywilson"><i class="fa fa-dribbble"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/DonnyWilson"><i class="fa fa-twitter-square"></i></a></li>
+            </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row portfolio-grid wow fadeIn" data-wow-delay="2s">
+      <div class="title">
+        <h5>The Work</h5>
+        <p><em>For more shots of my work check out my <a target="_blank" href="https://dribbble.com/donnywilson"><i class="fa fa-dribbble fa-2x"></i></a></em></p>
+      </div>
+      <div class="large-12 columns">
+        <aside class="gallery">
+          <ul class="gallery-feed"></ul>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="footer hide-for-small-only">
+      <div class="row hero-text">
+        <div class="large-12 columns">
+          <p class="links">
+            <a href="mailto:heydwilson@gmail.com?subject=Let's Work Together!&body=I have a great project."><i class="fa fa-send"></i> contact me</a>
+            <a href="mailto:heydwilson@gmail.com?subject=Let's Work Together!&body=I have a great project."><i class="fa fa-space-shuttle"></i> who I am</a>
+            <a href="mailto:heydwilson@gmail.com?subject=Let's Work Together!&body=I have a great project."><i class="fa fa-sign-in"></i> let's work</a>
+          </p>
+          <br>
+          <p class="subheader"><i class="fa fa-spinner fa-pulse"></i>   powered by donny</p>
+          &copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>
+        </div>
+      </div>
+    </footer>
+
+    <img src="img/hero-bg-profile.jpg" class="bg hide-for-small-only">
+
+    <script type="text/javascript">
+      $.jribbble.setToken('1220e8337487705bb3bf496f258e5b3a28581b9255f08bbefdca653cf2bfe168');
+      $.jribbble.users('donnywilson').shots({per_page: 9}).then(function(shots) {
+        var html = [];
+        shots.forEach(function(shot) {
+           html.push(
+                  '<li class="tile"><div>'+
+                  '<a class="thumb" target="_blank" href="'+shot.html_url+'" data-lightbox="project" data-title="'+shot.title+'"><figure><i class="fa fa-search-plus"></i></figure>' +
+                  '<img src="'+shot.images.hidpi+'" alt="'+shot.title+'" />' +
+                  '</a>' +
+                  '</div></li>'
+                  );
+        });
+        $('.gallery-feed').html(html.join(''));
+        console.log(html)
+      });
+    </script>
+
+
+    <script src="bower_components/jribbble/dist/jribbble.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/min/app-min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+  </body>
+</html>
