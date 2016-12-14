@@ -1,6 +1,14 @@
 html {
   font-size: 10px;
-  background: #6fd8a3;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f4f4f4+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+
+
+
 }
 body,html {
   margin: 0;
@@ -11,8 +19,15 @@ body,html {
 
 .content {
   width: 100%;
+  max-width: 500px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  border: 10px solid #6fd8a3;
+  -webkit-box-shadow: -1px 18px 35px -10px rgba(0,0,0,0.02);
+  -moz-box-shadow: -1px 18px 35px -10px rgba(0,0,0,0.02);
+  box-shadow: -1px 18px 35px -10px rgba(0,0,0,0.02);
+  background: #fff;
+  border-radius: 4px;
   margin-top: 6rem;
 }
 
@@ -28,20 +43,20 @@ body,html {
 }
 
 .content h1 {
-  color: #000;
-  opacity: .05;
-  font-size: 15vw;
-  font-weight: 800;
+  color: #5cc393;
+  opacity: .8;
+  font-size: 42px;
+  font-weight: 300;
   text-transform: uppercase;
   margin-top: 6rem;
   line-height: 1rem;
-  letter-spacing: 0rem;
+  letter-spacing: 1rem;
 }
 
 .content h2 {
   color: #5cc393;
   opacity: .9;
-  font-size: 132px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1rem;
   letter-spacing: 1rem;
@@ -62,10 +77,10 @@ body,html {
 
 .keys {
   display:flex;
-  flex-wrap: wrap;
   flex:1;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(255,255,255,.2);
   margin-top: 10rem;
   padding: 1.8rem 1.8rem;
   background: #5cc393;
@@ -99,9 +114,6 @@ body,html {
 
 .playing .sound {
   color: #fff;
-}
-.playing .key {
-  background: #4baad4;
 }
 
 kbd {
