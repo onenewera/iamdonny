@@ -18,7 +18,7 @@
 
   <style>
     html {
-      background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+      background:#018DED;
       background-size:cover;
       font-family:'helvetica neue';
       text-align: center;
@@ -35,6 +35,7 @@
 
     .clock {
       width: 30rem;
+      background: rgba(0,0,0,.06);
       height: 30rem;
       border:20px solid white;
       border-radius:50%;
@@ -58,13 +59,13 @@
     .hand {
       width:50%;
       height:6px;
-      background:black;
+      background: rgba(255,255,255,1);
       position: absolute;
-      top:50%;
       transform-origin: 100%;
       transform: rotate(90deg);
+      top:50%;
       transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      transition-timing-function: cubic-bezier(.1,3.7, .58, 1);
     }
 </style>
 
