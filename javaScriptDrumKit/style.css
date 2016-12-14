@@ -1,8 +1,11 @@
 html {
   font-size: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: #6fd8a3;
 =======
+=======
+>>>>>>> parent of ec52f6b... added some
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5cc393+0,00c167+100 */
   background: #5cc393; /* Old browsers */
   background: -moz-linear-gradient(top,  #5cc393 0%, #00c167 100%); /* FF3.6-15 */
@@ -10,6 +13,9 @@ html {
   background: linear-gradient(to bottom,  #5cc393 0%,#00c167 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cc393', endColorstr='#00c167',GradientType=0 ); /* IE6-9 */
 
+<<<<<<< HEAD
+>>>>>>> parent of ec52f6b... added some
+=======
 >>>>>>> parent of ec52f6b... added some
 }
 body,html {
